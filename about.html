@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>About</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+<!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- Jquery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <!-- JQuery script for smooth scrolling to div IDs -->
+  <script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+</head>
+
+<body>
+
+      <nav class="navbar navbar-fixed-top navbar-dark bg-primary">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+
+
+	<div class="container-paper">
+      <div class="container-custom" style="background-colour:#CFCFC4">
+        <div class="row-center">
+          <h1> Everything is awful and I'm not okay</h1>
+          <p class="content">Questions to ask before giving up</p>
+          <a href="#start" class="btn btn-info" role="button">Start</a>
+        </div>
+      </div>
+
+      <footer class="footer-custom">
+        <div class="container">
+          <p class="text-muted">Place sticky footer content here.</p>
+        </div>
+      </footer>
+
+  	</div>
+
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>
