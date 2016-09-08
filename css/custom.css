@@ -1,0 +1,27 @@
+.container-custom {
+  border-radius: 10px; 
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  height: 100vh;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.row-center {
+  margin-right: -15px;
+  margin-left: -15px;
+  text-align: center;
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+}
+
+
+.footer-custom{
+  margin-top:25px;
+  padding-top: 15px;
+  height: 10vh;
+  background-color: #286090;
+}
+
